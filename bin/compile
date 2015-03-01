@@ -20,8 +20,9 @@
 set -e
 ENV_DIR=$3
 BUILD_DIR=$1
-SSH_DIR=$BUILD_DIR/.ssh
+SSH_DIR=$HOME/.ssh
 
+echo "saving ssh keys"
 
 mkdir -p $SSH_DIR/
 chmod 700 $SSH_DIR/
