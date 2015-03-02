@@ -20,8 +20,8 @@
 set -e
 ENV_DIR=$3
 BUILD_DIR=$1
-SSH_DIRS=($HOME/.ssh $BUILD_DIR/.ssh)
-for SSH_DIR in $SSH_DIRS; do
+for SSH_DIR in $HOME/.ssh $BUILD_DIR/.ssh
+do
 	mkdir -p $SSH_DIR/
 	chmod 700 $SSH_DIR/
 
